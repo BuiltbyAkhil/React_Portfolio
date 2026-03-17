@@ -1,0 +1,27 @@
+[
+  {
+    "role": "Full-Stack Developer",
+    "organisation": "Freelance & Open Source",
+    "startDate": "Jan, 2022",
+    "endDate": "Present",
+    "experiences": [
+      "Built and deployed 5+ full-stack web apps using React.js, Node.js, and MongoDB",
+      "Integrated TMDB REST API and Firebase Authentication into production projects",
+      "Engineered component libraries with Tailwind CSS and CSS Modules",
+      "Deployed applications to Vercel and Netlify with CI/CD pipelines"
+    ],
+    "imageSrc": "history/google.png"
+  },
+  {
+    "role": "B.Tech — Computer Science & Engineering",
+    "organisation": "University College of Engineering, Kariavattom",
+    "startDate": "2021",
+    "endDate": "2025",
+    "experiences": [
+      "Relevant coursework: Data Structures, Algorithms, Database Management, Web Development, Operating Systems",
+      "Led knowledge-sharing sessions on React.js and modern JavaScript practices for peers",
+      "Actively contributed to college tech communities and coding events"
+    ],
+    "imageSrc": "history/microsoft.png"
+  }
+]

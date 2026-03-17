@@ -1,0 +1,314 @@
+<svg width="400" height="500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#1a2a6c" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#060b18" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="skinFace" cx="38%" cy="32%" r="62%">
+      <stop offset="0%" stop-color="#ffe0c0"/>
+      <stop offset="55%" stop-color="#f4a86a"/>
+      <stop offset="100%" stop-color="#c97a3a"/>
+    </radialGradient>
+    <radialGradient id="skinArm" cx="35%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#ffd5a8"/>
+      <stop offset="100%" stop-color="#c97a3a"/>
+    </radialGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#0a0500"/>
+      <stop offset="40%" stop-color="#2a1200"/>
+      <stop offset="100%" stop-color="#0a0500"/>
+    </linearGradient>
+    <linearGradient id="jacketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c45a10"/>
+      <stop offset="50%" stop-color="#a04010"/>
+      <stop offset="100%" stop-color="#7a2e08"/>
+    </linearGradient>
+    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e2040"/>
+      <stop offset="100%" stop-color="#071020"/>
+    </linearGradient>
+    <linearGradient id="jeansGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a3a6a"/>
+      <stop offset="100%" stop-color="#0e2244"/>
+    </linearGradient>
+    <linearGradient id="shoeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5a3a1a"/>
+      <stop offset="100%" stop-color="#2a1a08"/>
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a3a4a"/>
+      <stop offset="100%" stop-color="#111118"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="floorGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background ambient -->
+  <ellipse cx="200" cy="350" rx="180" ry="160" fill="url(#bgGlow)"/>
+
+  <!-- Floor glow -->
+  <ellipse cx="200" cy="470" rx="140" ry="22" fill="url(#floorGlow)"/>
+  <ellipse cx="200" cy="474" rx="100" ry="12" fill="#000" opacity="0.4"/>
+
+  <!-- Floating particles -->
+  <circle cx="40" cy="100" r="2.5" fill="#00d4ff" opacity="0.55" filter="url(#glow)"/>
+  <circle cx="355" cy="140" r="2" fill="#7b2fff" opacity="0.65" filter="url(#glow)"/>
+  <circle cx="30" cy="260" r="1.8" fill="#00d4ff" opacity="0.4"/>
+  <circle cx="370" cy="300" r="2.5" fill="#00d4ff" opacity="0.5" filter="url(#glow)"/>
+  <circle cx="55" cy="380" r="1.5" fill="#7b2fff" opacity="0.5"/>
+  <circle cx="350" cy="380" r="2" fill="#00d4ff" opacity="0.45"/>
+  <circle cx="310" cy="80" r="1.5" fill="#ff6b35" opacity="0.5"/>
+
+  <!-- SHOES -->
+  <!-- Left shoe -->
+  <ellipse cx="152" cy="464" rx="34" ry="12" fill="url(#shoeGrad)" filter="url(#shadow)"/>
+  <rect x="120" y="450" width="64" height="16" rx="8" fill="url(#shoeGrad)"/>
+  <rect x="124" y="447" width="56" height="10" rx="5" fill="#3a2010"/>
+  <!-- Shoe sole white strip -->
+  <rect x="120" y="458" width="64" height="5" rx="2" fill="#e0e0e0" opacity="0.15"/>
+
+  <!-- Right shoe -->
+  <ellipse cx="248" cy="464" rx="34" ry="12" fill="url(#shoeGrad)" filter="url(#shadow)"/>
+  <rect x="216" y="450" width="64" height="16" rx="8" fill="url(#shoeGrad)"/>
+  <rect x="220" y="447" width="56" height="10" rx="5" fill="#3a2010"/>
+  <rect x="216" y="458" width="64" height="5" rx="2" fill="#e0e0e0" opacity="0.15"/>
+
+  <!-- JEANS -->
+  <!-- Left leg -->
+  <path d="M 148 340 Q 138 380 130 420 Q 140 430 165 430 Q 170 390 175 350 Z"
+        fill="url(#jeansGrad)"/>
+  <!-- Left leg crease -->
+  <line x1="152" y1="345" x2="148" y2="420" stroke="#0a1a3a" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Right leg -->
+  <path d="M 252 340 Q 262 380 270 420 Q 260 430 235 430 Q 230 390 225 350 Z"
+        fill="url(#jeansGrad)"/>
+  <!-- Right leg crease -->
+  <line x1="248" y1="345" x2="252" y2="420" stroke="#0a1a3a" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Jeans crotch area -->
+  <path d="M 148 340 Q 200 355 252 340 L 240 280 Q 200 290 160 280 Z"
+        fill="#1a3a6a"/>
+  <!-- Belt -->
+  <rect x="155" y="270" width="90" height="12" rx="4" fill="#111118"/>
+  <rect x="194" y="272" width="12" height="8" rx="2" fill="#888890"/>
+
+  <!-- JACKET / HOODIE BODY -->
+  <!-- Main jacket -->
+  <path d="M 120 270 Q 110 290 108 340 Q 140 348 200 346 Q 260 348 292 340 Q 290 290 280 270 Q 260 258 240 255 L 200 265 L 160 255 Q 140 258 120 270 Z"
+        fill="url(#jacketGrad)" filter="url(#shadow)"/>
+
+  <!-- Jacket inner shirt visible -->
+  <path d="M 168 258 L 200 268 L 232 258 L 226 300 Q 200 308 174 300 Z"
+        fill="url(#shirtGrad)"/>
+
+  <!-- Jacket zipper -->
+  <line x1="200" y1="268" x2="200" y2="340" stroke="#888" stroke-width="1.5" opacity="0.6"/>
+  <rect x="196" y="300" width="8" height="6" rx="2" fill="#aaa" opacity="0.7"/>
+
+  <!-- Jacket pockets -->
+  <path d="M 120 305 Q 116 320 120 335 Q 130 340 148 336 Q 150 320 148 305 Q 135 300 120 305 Z"
+        fill="#7a2e08" opacity="0.8"/>
+  <path d="M 280 305 Q 284 320 280 335 Q 270 340 252 336 Q 250 320 252 305 Q 265 300 280 305 Z"
+        fill="#7a2e08" opacity="0.8"/>
+
+  <!-- LEFT ARM -->
+  <path d="M 120 270 Q 95 280 78 310 Q 68 335 75 355 Q 90 365 105 355 Q 115 335 120 315 Q 125 295 128 272 Z"
+        fill="url(#jacketGrad)"/>
+  <!-- Left arm sleeve cuff -->
+  <ellipse cx="90" cy="355" rx="18" ry="10" fill="#6a2808" transform="rotate(-15,90,355)"/>
+
+  <!-- LEFT HAND holding phone -->
+  <path d="M 72 345 Q 65 355 68 368 Q 75 375 88 370 Q 96 360 94 348 Z"
+        fill="url(#skinArm)"/>
+  <!-- Fingers -->
+  <rect x="62" y="348" width="7" height="14" rx="3.5" fill="url(#skinArm)" transform="rotate(-25,65,348)"/>
+  <rect x="70" y="344" width="7" height="16" rx="3.5" fill="url(#skinArm)" transform="rotate(-12,73,344)"/>
+  <rect x="79" y="342" width="7" height="15" rx="3.5" fill="url(#skinArm)" transform="rotate(2,82,342)"/>
+  <rect x="88" y="344" width="7" height="14" rx="3.5" fill="url(#skinArm)" transform="rotate(12,91,344)"/>
+
+  <!-- Phone in left hand -->
+  <rect x="55" y="320" width="36" height="62" rx="7" fill="url(#phoneGrad)" filter="url(#shadow)"/>
+  <rect x="58" y="324" width="30" height="52" rx="5" fill="#050e1c"/>
+  <!-- Phone screen glow -->
+  <rect x="58" y="324" width="30" height="52" rx="5" fill="#00d4ff" opacity="0.05"/>
+  <!-- Code on phone -->
+  <text x="62" y="336" font-family="monospace" font-size="5" fill="#00d4ff" opacity="0.9">&lt;App/&gt;</text>
+  <rect x="62" y="340" width="20" height="2" rx="1" fill="#7b2fff" opacity="0.8"/>
+  <rect x="62" y="345" width="24" height="2" rx="1" fill="#00d4ff" opacity="0.6"/>
+  <rect x="62" y="350" width="18" height="2" rx="1" fill="#ff6b35" opacity="0.7"/>
+  <rect x="62" y="355" width="22" height="2" rx="1" fill="#00d4ff" opacity="0.5"/>
+  <rect x="62" y="360" width="16" height="2" rx="1" fill="#7b2fff" opacity="0.6"/>
+  <rect x="62" y="365" width="26" height="2" rx="1" fill="#00d4ff" opacity="0.4"/>
+  <!-- Phone home indicator -->
+  <rect x="68" y="371" width="12" height="2" rx="1" fill="#333" opacity="0.8"/>
+  <!-- Phone camera -->
+  <circle cx="73" cy="327" r="2" fill="#0a1a2a"/>
+  <circle cx="73" cy="327" r="1" fill="#1a2a3a"/>
+
+  <!-- RIGHT ARM -->
+  <path d="M 280 270 Q 305 280 322 310 Q 332 335 325 355 Q 310 365 295 355 Q 285 335 280 315 Q 275 295 272 272 Z"
+        fill="url(#jacketGrad)"/>
+  <!-- Right sleeve cuff -->
+  <ellipse cx="310" cy="355" rx="18" ry="10" fill="#6a2808" transform="rotate(15,310,355)"/>
+
+  <!-- RIGHT HAND (relaxed, slightly open) -->
+  <path d="M 328 345 Q 335 355 332 368 Q 325 375 312 370 Q 304 360 306 348 Z"
+        fill="url(#skinArm)"/>
+  <rect x="331" y="348" width="7" height="14" rx="3.5" fill="url(#skinArm)" transform="rotate(25,335,348)"/>
+  <rect x="323" y="344" width="7" height="16" rx="3.5" fill="url(#skinArm)" transform="rotate(12,327,344)"/>
+  <rect x="314" y="342" width="7" height="15" rx="3.5" fill="url(#skinArm)" transform="rotate(-2,318,342)"/>
+  <rect x="305" y="344" width="7" height="14" rx="3.5" fill="url(#skinArm)" transform="rotate(-12,309,344)"/>
+
+  <!-- NECK -->
+  <rect x="185" y="175" width="30" height="40" rx="12" fill="url(#skinFace)"/>
+  <rect x="185" y="200" width="30" height="16" rx="8" fill="#c07840" opacity="0.3"/>
+
+  <!-- Jacket collar -->
+  <path d="M 168 258 Q 185 240 200 235 Q 215 240 232 258 Q 218 248 200 252 Q 182 248 168 258 Z"
+        fill="#7a2e08"/>
+  <path d="M 178 258 Q 192 244 200 242 Q 208 244 222 258 Q 210 250 200 253 Q 190 250 178 258 Z"
+        fill="#6a2808" opacity="0.7"/>
+
+  <!-- HEAD -->
+  <ellipse cx="200" cy="140" rx="62" ry="70" fill="url(#skinFace)" filter="url(#shadow)"/>
+
+  <!-- Jaw definition -->
+  <ellipse cx="200" cy="188" rx="40" ry="20" fill="#d08850" opacity="0.35"/>
+
+  <!-- Cheek highlight -->
+  <ellipse cx="165" cy="155" rx="16" ry="9" fill="#ffe0c0" opacity="0.2"/>
+  <ellipse cx="235" cy="155" rx="16" ry="9" fill="#ffe0c0" opacity="0.2"/>
+
+  <!-- Cheek blush -->
+  <ellipse cx="163" cy="158" rx="15" ry="8" fill="#ff8050" opacity="0.14"/>
+  <ellipse cx="237" cy="158" rx="15" ry="8" fill="#ff8050" opacity="0.14"/>
+
+  <!-- EAR LEFT -->
+  <ellipse cx="139" cy="145" rx="12" ry="15" fill="#f4a86a"/>
+  <ellipse cx="142" cy="145" rx="6" ry="9" fill="#d08040" opacity="0.5"/>
+  <!-- Earphone/earbud -->
+  <circle cx="138" cy="142" r="5" fill="#111118"/>
+  <circle cx="138" cy="142" r="3" fill="#1a1a28"/>
+  <circle cx="138" cy="142" r="1.5" fill="#00d4ff" opacity="0.8" filter="url(#glow)"/>
+
+  <!-- EAR RIGHT -->
+  <ellipse cx="261" cy="145" rx="12" ry="15" fill="#f4a86a"/>
+  <ellipse cx="258" cy="145" rx="6" ry="9" fill="#d08040" opacity="0.5"/>
+
+  <!-- HAIR — spiky/styled -->
+  <!-- Hair base -->
+  <path d="M 140 110 Q 145 68 200 58 Q 255 68 260 110 Q 250 92 230 86 Q 215 82 200 83 Q 185 82 170 86 Q 150 92 140 110 Z"
+        fill="url(#hairGrad)"/>
+  <!-- Hair spikes top -->
+  <path d="M 178 70 Q 183 45 192 38 Q 196 52 194 68 Z" fill="#1a0800"/>
+  <path d="M 193 63 Q 200 36 208 33 Q 210 50 207 65 Z" fill="#0a0500"/>
+  <path d="M 207 66 Q 216 42 224 40 Q 222 56 216 68 Z" fill="#1a0800"/>
+  <path d="M 220 72 Q 232 52 238 54 Q 232 68 225 76 Z" fill="#0a0500"/>
+  <path d="M 160 82 Q 168 62 175 63 Q 172 76 166 84 Z" fill="#1a0800"/>
+  <!-- Hair side left -->
+  <path d="M 140 110 Q 133 130 136 155 Q 140 145 144 130 Z" fill="#0a0500"/>
+  <!-- Hair side right -->
+  <path d="M 260 110 Q 267 130 264 155 Q 260 145 256 130 Z" fill="#0a0500"/>
+  <!-- Hair sheen -->
+  <path d="M 185 68 Q 200 62 215 68 Q 205 64 185 68 Z" fill="#5a3010" opacity="0.5"/>
+
+  <!-- EYEBROWS (thick, expressive) -->
+  <path d="M 162 118 Q 177 111 190 114" stroke="#0a0500" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M 210 114 Q 223 111 238 118" stroke="#0a0500" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+
+  <!-- EYE SOCKETS shadow -->
+  <ellipse cx="176" cy="136" rx="18" ry="12" fill="#c07030" opacity="0.18"/>
+  <ellipse cx="224" cy="136" rx="18" ry="12" fill="#c07030" opacity="0.18"/>
+
+  <!-- EYE WHITES -->
+  <ellipse cx="176" cy="137" rx="15" ry="10" fill="white"/>
+  <ellipse cx="224" cy="137" rx="15" ry="10" fill="white"/>
+
+  <!-- IRIS -->
+  <circle cx="176" cy="137" r="8" fill="#3a1800"/>
+  <circle cx="224" cy="137" r="8" fill="#3a1800"/>
+  <circle cx="176" cy="137" r="5.5" fill="#6b3010"/>
+  <circle cx="224" cy="137" r="5.5" fill="#6b3010"/>
+  <!-- Pupils -->
+  <circle cx="176" cy="137" r="3.5" fill="#050505"/>
+  <circle cx="224" cy="137" r="3.5" fill="#050505"/>
+  <!-- Eye shine -->
+  <circle cx="179" cy="133" r="2.5" fill="white" opacity="0.92"/>
+  <circle cx="227" cy="133" r="2.5" fill="white" opacity="0.92"/>
+  <circle cx="172" cy="140" r="1" fill="white" opacity="0.5"/>
+  <circle cx="220" cy="140" r="1" fill="white" opacity="0.5"/>
+
+  <!-- Eyelids -->
+  <path d="M 161 131 Q 176 125 191 131" stroke="#0a0500" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M 209 131 Q 224 125 239 131" stroke="#0a0500" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- Lower lids -->
+  <path d="M 163 143 Q 176 148 189 143" stroke="#c07840" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <path d="M 211 143 Q 224 148 237 143" stroke="#c07840" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- NOSE -->
+  <path d="M 198 144 Q 194 162 190 170 Q 198 174 210 170 Q 206 162 202 144 Z"
+        fill="#c07840" opacity="0.3"/>
+  <ellipse cx="192" cy="169" rx="6" ry="3.5" fill="#b06830" opacity="0.35"/>
+  <ellipse cx="208" cy="169" rx="6" ry="3.5" fill="#b06830" opacity="0.35"/>
+
+  <!-- MOUTH — confident smirk -->
+  <path d="M 182 183 Q 200 194 218 183" stroke="#a05828" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Upper lip -->
+  <path d="M 184 182 Q 200 179 216 182 Q 208 186 200 187 Q 192 186 184 182 Z"
+        fill="#d07850" opacity="0.55"/>
+  <!-- Lower lip -->
+  <path d="M 184 183 Q 200 190 216 183 Q 208 196 200 197 Q 192 196 184 183 Z"
+        fill="#c06840" opacity="0.45"/>
+  <!-- Slight smirk crease right -->
+  <path d="M 217 183 Q 221 182 222 186" stroke="#a05828" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- GLASSES (optional cool detail) -->
+  <!-- Left lens frame -->
+  <rect x="160" y="126" width="34" height="24" rx="8" fill="none" stroke="#1a1a2a" stroke-width="2.5" opacity="0.85"/>
+  <!-- Right lens frame -->
+  <rect x="206" y="126" width="34" height="24" rx="8" fill="none" stroke="#1a1a2a" stroke-width="2.5" opacity="0.85"/>
+  <!-- Bridge -->
+  <line x1="194" y1="136" x2="206" y2="136" stroke="#1a1a2a" stroke-width="2.5" opacity="0.85"/>
+  <!-- Temple left -->
+  <line x1="160" y1="134" x2="141" y2="136" stroke="#1a1a2a" stroke-width="2" opacity="0.85"/>
+  <!-- Temple right -->
+  <line x1="240" y1="134" x2="260" y2="136" stroke="#1a1a2a" stroke-width="2" opacity="0.85"/>
+  <!-- Lens tint (subtle blue) -->
+  <rect x="161" y="127" width="32" height="22" rx="7" fill="#00d4ff" opacity="0.04"/>
+  <rect x="207" y="127" width="32" height="22" rx="7" fill="#00d4ff" opacity="0.04"/>
+  <!-- Lens glare -->
+  <path d="M 163 128 L 172 128 L 163 137 Z" fill="white" opacity="0.07"/>
+  <path d="M 209 128 L 218 128 L 209 137 Z" fill="white" opacity="0.07"/>
+
+  <!-- Floating tech badges -->
+  <g transform="translate(295, 120) rotate(8)" opacity="0.7" filter="url(#glow)">
+    <rect width="72" height="24" rx="7" fill="#0a1628" stroke="#00d4ff" stroke-width="0.8"/>
+    <text x="10" y="16" font-family="monospace" font-size="10" fill="#00d4ff">React.js</text>
+  </g>
+  <g transform="translate(10, 185) rotate(-10)" opacity="0.65" filter="url(#glow)">
+    <rect width="70" height="24" rx="7" fill="#0a1628" stroke="#7b2fff" stroke-width="0.8"/>
+    <text x="8" y="16" font-family="monospace" font-size="10" fill="#7b2fff">Node.js</text>
+  </g>
+  <g transform="translate(300, 240) rotate(5)" opacity="0.6" filter="url(#glow)">
+    <rect width="76" height="24" rx="7" fill="#0a1628" stroke="#ff6b35" stroke-width="0.8"/>
+    <text x="8" y="16" font-family="monospace" font-size="10" fill="#ff6b35">MongoDB</text>
+  </g>
+  <g transform="translate(8, 310) rotate(-6)" opacity="0.55" filter="url(#glow)">
+    <rect width="54" height="24" rx="7" fill="#0a1628" stroke="#00d4ff" stroke-width="0.8"/>
+    <text x="9" y="16" font-family="monospace" font-size="10" fill="#00d4ff">GSAP</text>
+  </g>
+</svg>

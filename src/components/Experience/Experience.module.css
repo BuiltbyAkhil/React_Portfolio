@@ -1,0 +1,187 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 100px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.titleWrap {
+  margin-bottom: 44px;
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow:
+    0 1px 0 #aaa,
+    0 2px 0 #999,
+    0 3px 0 #888,
+    0 5px 8px rgba(0,0,0,0.3);
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 48px;
+  margin-top: 0;
+}
+
+/* Skills grid */
+.skills {
+  width: 46%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-content: flex-start;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  transition: all 0.3s ease;
+  cursor: default;
+  min-width: 90px;
+}
+
+.skill:hover {
+  border-color: rgba(0,212,255,0.35);
+  background: rgba(0,212,255,0.05);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,212,255,0.1);
+}
+
+.skillImageContainer {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillImageContainer img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.skill p {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+}
+
+/* History / Timeline */
+.history {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.historyItem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 18px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 18px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.historyItem:hover {
+  border-color: rgba(0,212,255,0.25);
+  background: rgba(0,212,255,0.03);
+}
+
+.historyItem img {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: rgba(255,255,255,0.07);
+  padding: 6px;
+  flex-shrink: 0;
+}
+
+.historyItemDetails h3 {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.historyItemDetails p {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.historyItemDetails ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.historyItemDetails ul li {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.5;
+  padding-left: 14px;
+  position: relative;
+}
+
+.historyItemDetails ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-size: 10px;
+  top: 2px;
+}
+
+@media screen and (max-width: 900px) {
+  .content { flex-direction: column; }
+  .skills { width: 100%; justify-content: center; }
+  .history { width: 100%; }
+  .title { font-size: 48px; }
+}

@@ -1,0 +1,110 @@
+@import "../../vars.css";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 8%;
+  z-index: 100;
+  background: rgba(6, 11, 24, 0.75);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #00d4ff, #7b2fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.menuBtn {
+  display: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItems {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  align-items: center;
+}
+
+.menuItems a {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+  transition: color 0.25s ease;
+  text-transform: uppercase;
+}
+
+.menuItems a:hover {
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 8%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+  }
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    background: rgba(10, 15, 30, 0.95);
+    border: 1px solid rgba(0,212,255,0.15);
+    padding: 24px 33px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    backdrop-filter: blur(20px);
+  }
+  .menuOpen {
+    display: flex;
+  }
+}
+
+.resumeBtn {
+  background: linear-gradient(135deg, #00d4ff, #7b2fff) !important;
+  color: #fff !important;
+  padding: 8px 22px !important;
+  border-radius: 100px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  transition: box-shadow 0.3s ease, transform 0.3s ease !important;
+  white-space: nowrap;
+}
+
+.resumeBtn:hover {
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.55) !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+}

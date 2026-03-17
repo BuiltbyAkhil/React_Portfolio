@@ -1,0 +1,48 @@
+@import "../../vars.css";
+
+.container {
+  margin-top: 100px;
+  color: var(--color-text);
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.titleWrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow:
+    0 1px 0 #aaa,
+    0 2px 0 #999,
+    0 3px 0 #888,
+    0 5px 8px rgba(0,0,0,0.3);
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 22px;
+  width: 100%;
+}

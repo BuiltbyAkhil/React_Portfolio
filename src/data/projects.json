@@ -1,0 +1,42 @@
+[
+  {
+    "title": "StreamVault — OTT Platform",
+    "imageSrc": "projects/streamvault.svg",
+    "description": "A Netflix-style full-stack OTT platform with JWT authentication, role-based access control, and an admin panel. Built with React.js, Node.js, Express.js, and MongoDB.",
+    "skills": ["React", "Node.js", "MongoDB", "JWT"],
+    "demo": "https://github.com/BuiltbyAkhil",
+    "source": "https://github.com/BuiltbyAkhil"
+  },
+  {
+    "title": "Crowd-Sourced Gadget Reviews",
+    "imageSrc": "projects/gadgetreview.svg",
+    "description": "Full-stack app where users post and review gadgets with star ratings, comments, and image uploads. Features JWT auth and secure password hashing.",
+    "skills": ["React", "MongoDB", "JWT", "Node.js"],
+    "demo": "https://github.com/BuiltbyAkhil",
+    "source": "https://github.com/BuiltbyAkhil"
+  },
+  {
+    "title": "Netflix Clone",
+    "imageSrc": "projects/netflixclone.svg",
+    "description": "Responsive Netflix-style app built with React.js, integrating TMDB API for dynamic movie/TV content and Firebase for secure user authentication.",
+    "skills": ["React", "TMDB API", "Firebase", "CSS Modules"],
+    "demo": "https://github.com/BuiltbyAkhil",
+    "source": "https://github.com/BuiltbyAkhil"
+  },
+  {
+    "title": "Awwwards-Style Website",
+    "imageSrc": "projects/awwwards.svg",
+    "description": "Animation-rich interactive website using GSAP, featuring scroll-triggered effects, smooth transitions, and an immersive modern UI.",
+    "skills": ["React", "GSAP", "Tailwind CSS"],
+    "demo": "https://github.com/BuiltbyAkhil",
+    "source": "https://github.com/BuiltbyAkhil"
+  },
+  {
+    "title": "React Portfolio",
+    "imageSrc": "projects/portfolio.svg",
+    "description": "Fully responsive portfolio with React Router and CSS Modules, featuring interactive modals, image galleries, and validated contact forms.",
+    "skills": ["React", "React Router", "CSS Modules"],
+    "demo": "https://github.com/BuiltbyAkhil",
+    "source": "https://github.com/BuiltbyAkhil"
+  }
+]
