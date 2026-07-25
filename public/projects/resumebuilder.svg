@@ -1,0 +1,42 @@
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#0f766e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="300" fill="url(#bg)" rx="16"/>
+  <rect width="600" height="300" fill="url(#grid)" rx="16" opacity="0.8"/>
+
+  <circle cx="500" cy="55" r="120" fill="#6ee7b7" opacity="0.10" filter="url(#glow)"/>
+  <circle cx="90" cy="245" r="90" fill="#5eead4" opacity="0.08" filter="url(#glow)"/>
+
+  <line x1="0" y1="250" x2="600" y2="250" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <line x1="60" y1="0" x2="60" y2="300" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <rect x="0" y="0" width="4" height="60" fill="#6ee7b7" rx="2" opacity="0.8"/>
+  <rect x="0" y="0" width="60" height="4" fill="#6ee7b7" rx="2" opacity="0.8"/>
+
+  <!-- Document / resume icon -->
+  <g transform="translate(258,80)" filter="url(#glow)">
+    <rect x="0" y="0" width="84" height="100" rx="6" fill="#ffffff" opacity="0.95"/>
+    <rect x="14" y="16" width="56" height="6" rx="3" fill="#0f766e"/>
+    <rect x="14" y="32" width="40" height="5" rx="2.5" fill="#94a3b8"/>
+    <rect x="14" y="44" width="56" height="5" rx="2.5" fill="#94a3b8"/>
+    <rect x="14" y="56" width="45" height="5" rx="2.5" fill="#94a3b8"/>
+    <rect x="14" y="72" width="30" height="5" rx="2.5" fill="#94a3b8"/>
+    <circle cx="66" cy="82" r="10" fill="#facc15"/>
+    <path d="M62 82 L65 85 L71 78" stroke="#0f172a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <text x="300" y="205" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#ffffff" text-anchor="middle" opacity="0.95">AI Resume Builder</text>
+  <text x="300" y="232" font-family="Arial, sans-serif" font-size="14" fill="#d1fae5" text-anchor="middle" opacity="0.8">Live Preview · ATS Score · Job Matcher</text>
+</svg>
