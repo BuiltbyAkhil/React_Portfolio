@@ -12,7 +12,7 @@
     "imageSrc": "projects/resumebuilder.svg",
     "description": "Full-stack app with a live resume preview, ATS scoring system, and component-based React architecture. Integrated the OpenAI API for automated resume and cover letter generation, plus 15+ JWT-secured REST APIs and a job application tracking system.",
     "skills": ["React", "Node.js", "OpenAI API", "JWT"],
-    "demo": "https://ai-resume-builder-29v8.onrender.com",
+    "demo": "https://ai-resume-builder-1-gzyz.onrender.com",
     "source": "https://github.com/BuiltbyAkhil"
   },
   {
